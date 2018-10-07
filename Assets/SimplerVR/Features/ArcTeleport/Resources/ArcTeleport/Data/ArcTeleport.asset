@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5470263472bcbb746bd865a9d43a4444, type: 3}
+  m_Name: ArcTeleport
+  m_EditorClassIdentifier: 
+  ButtonsSelected:
+  - {fileID: 114951731275441858}
+  - {fileID: 114127441951673516}
+  - {fileID: 114968234176608014}
+  - {fileID: 114460011585707110}
+  NavMeshRender: {fileID: 2100000, guid: 5446f6b9cb948d948a2adac3ab0d7dff, type: 2}
+  NavAreaMask: -1
+  BorderRenderMaterial: {fileID: 2100000, guid: fa6219d0085ec8549a38dd910b6b1b14,
+    type: 2}
+  BorderRenderHeight: 0
+  DisplayTeleportNavmesh: 0
+  InitialVelocity: {x: 0, y: 0, z: 9}
+  Acceleration: {x: 0, y: -9.8, z: 0}
+  PointCount: 40
+  PointSpacing: 0.3
+  GraphicThickness: 0.05
+  GoodGraphicMaterial: {fileID: 2100000, guid: ec5e193ae2f7a0c418d1a94a84c800ab, type: 2}
+  BadGraphicMaterial: {fileID: 2100000, guid: 09e614f1ba2e823408b90b956f6d852a, type: 2}
+  SelectionPadMesh: {fileID: 4300000, guid: 9eebe05690d04874c8a6a0e9b0428923, type: 3}
+  SelectionPadFadeMaterial: {fileID: 2100000, guid: 2b7afb98b6d17214a881eabfc414589f,
+    type: 2}
+  GoodSelectionPadCircle: {fileID: 2100000, guid: 7d84362ec81691f408162026021be29b,
+    type: 2}
+  BadSelectionPadCircle: {fileID: 2100000, guid: 951d6e300f7994449af9bcae4c4894f9,
+    type: 2}
+  SelectionPadBottomMaterial: {fileID: 2100000, guid: a29608697465a7c429016d721496d21c,
+    type: 2}
+  CollisionLayers:
+    serializedVersion: 2
+    m_Bits: 55
+  HapticClickAngleStep: 10
+  TeleportFadeDuration: 0.2
+--- !u!114 &114127441951673516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e940613c0f4f14285689c08468d236, type: 3}
+  m_Name: Touchpad
+  m_EditorClassIdentifier: 
+  Name: 1
+  Action: 1
+  IsRightControllerButton: 1
+  OverrideInteraction: 0
+  methodName: WhileHoldingButtonDown
+--- !u!114 &114460011585707110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e940613c0f4f14285689c08468d236, type: 3}
+  m_Name: Touchpad
+  m_EditorClassIdentifier: 
+  Name: 1
+  Action: 1
+  IsRightControllerButton: 0
+  OverrideInteraction: 0
+  methodName: WhileHoldingButtonDown
+--- !u!114 &114951731275441858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e940613c0f4f14285689c08468d236, type: 3}
+  m_Name: Touchpad
+  m_EditorClassIdentifier: 
+  Name: 1
+  Action: 0
+  IsRightControllerButton: 1
+  OverrideInteraction: 0
+  methodName: Teleport
+--- !u!114 &114968234176608014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e940613c0f4f14285689c08468d236, type: 3}
+  m_Name: Touchpad
+  m_EditorClassIdentifier: 
+  Name: 1
+  Action: 0
+  IsRightControllerButton: 0
+  OverrideInteraction: 0
+  methodName: Teleport
