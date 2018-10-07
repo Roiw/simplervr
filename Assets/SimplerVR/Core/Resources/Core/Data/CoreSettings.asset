@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2968cae6e14de554f926fa41c46cbe24, type: 3}
+  m_Name: CoreSettings
+  m_EditorClassIdentifier: 
+  UseDefaultHints: 1
+  DefaultHintsContent:
+  - Teleport
+  - Teleport
+  - Pause
+  - Pause
+  DefaultHintButtons:
+  - LeftTouchpad
+  - RightTouchpad
+  - LeftOptions
+  - RightOptions
+  DefaultHintPositions: 00010001
+  UseLaserInteraction: 1
+  LaserOnLeftHand: 0
+  LaserLenght: 4
+  LaserMaterial: {fileID: 2100000, guid: f25d979b2b4ecee408191de48d02d326, type: 2}
+  LaserCollision:
+    serializedVersion: 2
+    m_Bits: 73791
+  LaserCollisionSprite: {fileID: 21300000, guid: 8bd27670e15b5ab4297a74eda93d8c18,
+    type: 3}
+  LaserCollisionMaterial: {fileID: 2100000, guid: 5dfe07cfe6f634148b1b856679b79012,
+    type: 2}
+  LaserCollisionScale: 0.01
